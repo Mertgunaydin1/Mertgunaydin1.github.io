@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <title>WEB TASARIM-2 VİZE</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+        
+        </head>
+<body>
+    <section id="home" class="main-home">
+        <div class="kaplama"></div>
+        <div id="particles-js"></div>
+        <div class="container">
+             <div class="row">
+   
+                  <div class="col-md-12 col-sm-12">
+                       <h1>REACT CONTEXT İLE VERİ AKTARIMI</h1>
+                       <h4>React Nedir, Nasıl Kurulur ve React Context ile Veri Aktarımı</h4>
+                  </div>
+   
+             </div>
+        </div>
+
+   </section>
+
+
+   <div class="içerik">
+          <div class="içerik-kutusu">
+               <h3 class="başlık">REACT NEDİR?</h3>
+               <p>React,29 Mayıs 2013 yılında piyasaya sürülmüş kullanıcı arayüzü oluşturmaya yarayan açık kaynak kodlu bir javascript kütüphanesidir. Facebook önderliğinde bir geliştirici grubu tarafından geliştirilmekte olan React, Model-View-Controller prensibine uygun olarak oluşturulmuştur.
+               <br>
+               <br>
+               Başlarda popülerlik kazanması yanlış stratejiler sonucu sekteye yavaşlasa da, doğru hamleler ile günümüzde en çok tercih edilen kütüphanelerden biri haline gelmiştir.
+               React, yıllar içerisinde gelişimini tamamlayarak stabil bir yapıya da ulaşmıştır.
+                <br>
+               </p>
+               <img src="images/react-js.jpg" class="facebooklogo1">
+
+               <img src="images/face.jpg " class="facebooklogo">
+
+          </div>
+   </div>
+   
+
+<div class="içerik">
+     <div id="section-1"></div>
+     <div class="içerik-kutusu">
+           <h3 class="başlık">REACT KURULUM SÜRECİ (WİNDOWS)</h3>
+          <p>
+               React'ı kurmak ve düzgün çalıştırmak için öncelikle "Node.js" kurulmalıdır. "nodejs.org/tr/download" linkine giderek bilgisayarınıza uyan sürümünü indirin.
+                Kolay bir setup sürecinden geçip uygulamayı kurun. Daha sonra kontrol amaçlı cmd ekranına gelin ve " node -v " komutunu yazıp enter tuşuna basın.
+                Aşşağıda ki gibi bir sürüm yazılı ise doğru şekilde kurulmuş demektir.
+          </p>
+          <img src="images/Kurulum1.png" width="650" height="400">
+          
+          <p>
+               <br>
+               Aynı işlemi npm içinde yapıyoruz.Npm kurulumunu öğrenmek içinse cmd ekranına <b>npm -v</b> yazmamız yeterli olacatır. Bu işemleri yaptıktan sonra cmd ekranımıza "npm instal -g create-react-app" yazarak kurulum işlemine devam ediyoruz (Biraz vaktinizi alabilir).
+               </br>
+          </p>
+          <p>
+               <br>
+               İşlem tamamlandığı zaman (Visual Studio Code editörü için anlatım yaptım) masaüstüne bir klasör açıyoruz.Daha sonra editörümüz üzerinden oluşturduğumuz klasörü açıyoruz.Üstte bulunan menüden "Terminal" seçeneğine tıklayıp "New Terminal" seçeneğine tıklıyoruz. Açılan Terminal penceresine <b>install -g create-react-app</b> yazıp enter tuşuna basıyoruz.
+               </br>
+          </p>
+          <img src="images/kurulum2.png" width="700" height="200">
+          <p>
+          <br>
+          Bu işlemden sonra uzun bi kurulum süreci gerçekleşecektir. Kurulum tamamlandıktan sonra aynı yere <b>create-react-app</b> 'kurulacak dosyanın adı'" yazıp asıl dosyaların kurulum işlemine geçiyoruz. Kurulum tamamlandıktan sonra sol tarafa gerekli dosyalar gelecektir. Böylelikle kurulum işlemi tamamlanmış olur.
+          </br>
+          </p>
+          <img src="images/kurulum3.png">
+
+          <p>
+               <br>
+               Bu işemleri yaptıktan sonra terminal ekranına "cd 'dosyanın adı' " komutunu yazıp ardından <b>npm start</b> yazarak kullanıma hazır hale getiriyoruz. Artık Reactı dilediğiniz gibi kullanabilirsiniz!
+               </br></div>
+
+   </div>
+
+
+
+<div class="içerik">
+     <div class="içerik-kutusu">
+          <h3 class="başlık">REACT CONTEXT İLE VERİ AKTARIMI</h3>
+          <p>React Contextler component ağacında istediğimiz veriyi proplar üzerinden taşınmadan componentler arasında  taşınmayı sağlar. (Dark mod-Light Mod örnek verilebilir)
+               <br>
+               Öncelikle "src" klasörümüzün altına bir "component" klasörü açıyoruz. Açtığımız klasörün içine ise " --.js " adlı bir dosya açıyoruz.
+               <br>
+               Açılan dosyanın içeriğini belirliyoruz. İçeriği oluşturduktan sonra içeriğimizi "App.js" dosyasında kullanmakla başlıyoruz.
+               <br>
+               <br>
+               <img src="images/f1.png" width="450" height="250">
+          </br>
+               <br>
+               App.js dosyasına gelip <b>İmport Icerik from './component/Icerik'</b> yazıyoruz. Sonra div içerisinde <Icerik/> yazarak içeriğimizi aktarıyoruz ve kaydediyoruz.
+               </p>
+               <p>
+               <br>
+               Daha sonra <b>,</b>  yazarak (function app'in üzerine) bir context oluşturuyoruz. Sonra div içerisine contextimizin ismi ile oluşturduğumuz etiketin arasına hangi companentin kullanılması isteniyorsa yerleştiriyoruz. Sonra contexitimize bir sağlayıcı atıyoruz (sonuna ".provider ekleyerek"). Sonra bir <b>const deger=....</b> ataması yapıp .provider yazdığımız yerin devamına <b>value{deger}</b> kısmını ekliyoruz.
+               <br>
+               <br>
+               <img src="images/f2.png" width="400" height="250">
+               </br>
+               <br>
+               Sonra export ettiğimiz içeriği import etmek için --.js dosyamıza geliyoruz. <b>İmport {KullanılacakVeri} from '../App'</b> yazıyoruz.
+               </br>
+               <br>
+               Sonra görmek istediğimiz veriyi div içinde paragraf etiketiyle <b>{useContext(KullanılacakVeri)}</b> ekliyoruz. İşlem tamamlandı!</br>
+               <br>
+               Aşşağıda kodların ve tarayıcının son halini inceleyebilirsiniz;
+          </br>
+          <br>
+          <img src="images/f3.png" width="400" height="300">
+     </br>
+     <br>
+          <img src="images/f4.png" width="400" height="300">
+     </br>
+
+     <br>
+     <img src="images/f5.png" width="600" height="300">
+</br>
+<br>
+MERT GÜNAYDIN
+</br>
+<br>
+21430070036
+</br>
+ 
+ 
+ </div>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
